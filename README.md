@@ -71,7 +71,8 @@ Also, download ProteinChat's trained weights from [Google Drive](https://drive.g
 
 The stage-1 training configuration file is [configs/proteinchat_stage1.yaml](configs/proteinchat_stage1.yaml). In addition, you may want to change the number of epochs and other hyper-parameters there, such as `max_epoch`, `init_lr`, `min_lr`,`warmup_steps`, `batch_size_train`. Please adjust `iters_per_epoch` so that `iters_per_epoch` * `batch_size_train` = your training set size. 
 
-Also, set your desired output directory [here](configs/proteinchat_stage1.yaml#52).
+Also, set your desired output directory [configs
+/proteinchat_stage1.yaml#52](configs/proteinchat_stage1.yaml#52).
 
 Start stage-1 training by running 
 ```bash
