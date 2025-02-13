@@ -63,7 +63,7 @@ Download proteinglm-1b-mlm[https://huggingface.co/Bo1015/proteinglm-1b-mlm] to y
             hidden_states = self.final_layernorm(hidden_states)
 ```
 
-Then in [configs/proteinchat_eval.yaml](configs/proteinchat_eval.yaml#L18), set `glm_load_path` to your local path of proteinglm.
+Then in [configs/proteinchat_eval.yaml](configs/proteinchat_eval.yaml#L18), set `glm_load_path` & `llama_model` to your local path of proteinglm.
 Also, download ProteinChat's trained weights from [Google Drive](https://drive.google.com/file/d/1H-POt4e5Q5fYF59ZwfSdAJyuQiJ2rtJl/view?usp=sharing) and set its path to `stage1_ckpt` in [configs/proteinchat_eval.yaml](configs/proteinchat_eval.yaml#L19).
 
 ### Training
